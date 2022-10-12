@@ -74,6 +74,7 @@ with st.sidebar:
         label_visibility="collapsed",
     )
     btn_stats = st.button('OK')
+    st.write(' ')
 st.header("Mark")
 
 if btn_stats:
@@ -99,4 +100,7 @@ if btn_stats:
     print(Grade_nums)
 
     df = pd.read_csv(DATA_URL)
+    df['res'] = df['A'] * A_num + df['B'] * B_num + df['C'] * C_num + df['D'] * D_num
+    print(df['req'])
+    print(df['res'])
     st.write(df)
