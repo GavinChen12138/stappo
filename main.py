@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+DATA_URL = 'https://raw.githubusercontent.com/GavinChen12138/stappo/master/sch.csv'
+
 # Using "with" notation
 with st.sidebar:
     st.header("各科成绩")
@@ -97,5 +99,5 @@ if btn_stats:
     st.write('选课', options[0], options[1], options[2])
     print(Grade_nums)
 
-    df = pd.read_csv('sch.csv')
+    df = pd.read_csv(DATA_URL)
     st.write(df)
