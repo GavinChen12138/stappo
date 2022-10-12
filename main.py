@@ -96,7 +96,6 @@ if btn_stats:
     Grade_nums = [A_num, B_num, C_num, D_num, E_num]
     st.write('分数', Chs_mark, Math_mark, Eng_mark, Pol_mark, His_mark, Geo_mark, Che_mark, Bio_mark, Tec_mark)
     st.write('等级', Chs_grade, Math_grade, Eng_grade, Pol_grade, His_grade, Geo_grade, Che_grade, Bio_grade, Tec_grade)
-    st.write('选课', options[0], options[1], options[2])
     print(Grade_nums)
 
     df = pd.read_csv(DATA_URL)
