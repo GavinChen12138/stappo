@@ -97,5 +97,5 @@ if btn_stats:
     st.write('选课', options[0], options[1], options[2])
     print(Grade_nums)
 
-    df = pd.read_csv('/Users/fan/PycharmProjects/pythonProject1/sch.csv')
+    df = pd.read_csv('sch.csv')
     st.write(df)
